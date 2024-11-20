@@ -469,6 +469,16 @@ var (
 	}
 
 	// Miner settings
+	MinerMaxMergedBundlesFlag = cli.IntFlag{
+		Name:  "miner.maxmergedbundles",
+		Usage: "nxpkg - The maximum amount of bundles to merge. The miner will run this many workers in parallel to calculate if the full block is more profitable with these additional bundles.",
+		Value: 3,
+	}
+	MinerTrustedRelaysFlag = cli.StringFlag{
+		Name:  "miner.trustedrelays",
+		Usage: "nxpkg - The Ethereum addresses of trusted relays for signature verification. The miner will accept signed bundles and other tasks from the relay, being reasonably certain about DDoS safety.",
+		Value: "0x870e2734DdBe2Fba9864f33f3420d59Bc641f2be",
+	}
 	MinerGasLimitFlag = &cli.Uint64Flag{
 		Name:     "miner.gaslimit",
 		Usage:    "Target gas ceiling for mined blocks",
