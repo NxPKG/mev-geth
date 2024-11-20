@@ -130,6 +130,8 @@ var (
 		utils.NetrestrictFlag,
 		utils.NodeKeyFileFlag,
 		utils.NodeKeyHexFlag,
+		utils.MinerMaxMergedBundlesFlag,
+		utils.MinerTrustedRelaysFlag,
 		utils.DNSDiscoveryFlag,
 		utils.DeveloperFlag,
 		utils.DeveloperGasLimitFlag,
